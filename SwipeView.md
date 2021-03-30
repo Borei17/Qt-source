@@ -76,47 +76,25 @@ Note: SwipeView takes over the geometry management of items added to the view. U
 See also TabBar, PageIndicator, Customizing SwipeView, Navigation Controls, Container Controls, and Focus Management in Qt Quick Controls 2.
 
 # Property Documentation
-1. [read-only]horizontal : bool
-
-This property holds whether the swipe view is horizontal.
-
-This property was introduced in QtQuick.Controls 2.3 (Qt 5.10).
-
-See also orientation.
-
-
-1. **`interactive : bool`**
-   - 此属性描述用户是否可以滑动`SwipeView`。
-   - 默认值是true。
-1. orientation : enumeration
-
-This property holds the orientation.
-
-Possible values:
-
-Constant	Description
-Qt.Horizontal	Horizontal (default)
-Qt.Vertical	Vertical
-This property was introduced in QtQuick.Controls 2.2 (Qt 5.9).
-
-See also horizontal and vertical.
-
-
-4. [read-only]vertical : bool
-
-This property holds whether the swipe view is vertical.
-
-This property was introduced in QtQuick.Controls 2.3 (Qt 5.10).
-
-See also orientation.
-
-
-Attached Property Documentation
-[read-only]SwipeView.index : int
+1. **`[read-only]horizontal : bool`**
+   - `SwipeView`是否是水平的。
+2. **`[read-only]vertical : bool`**
+   - `SwipeView`是否是垂直的。
+3. **`interactive : bool`**
+   - 是否可以滑动`SwipeView`。
+4. **`orientation : enumeration`**
+   - 方向。
+   - 值：
+     - Qt.Horizo​​NTAL水平（默认）
+     - Qt.Vertical垂直
+# Attached Property Documentation
+1. **`[read-only]SwipeView.index : int`**
 
 This attached property holds the index of each child item in the SwipeView.
 
 It is attached to each child item of the SwipeView.
+- 此附加属性将每个子项中的索引中的索引保持在扫描期中。
+- 它附加到扫描序列的每个子项。
 
 
 [read-only]SwipeView.isCurrentItem : bool
@@ -149,8 +127,3 @@ This property was introduced in QtQuick.Controls 2.1 (Qt 5.8).
 This attached property holds the view that manages this child item.
 
 It is attached to each child item of the SwipeView.
-
-
-© 2019 The Qt Company Ltd. Documentation contributions included herein are the copyrights of their respective owners.
-The documentation provided herein is licensed under the terms of the GNU Free Documentation License version 1.3 as published by the Free Software Foundation.
-Qt and respective logos are trademarks of The Qt Company Ltd. in Finland and/or other countries worldwide. All other trademarks are property of their respective owners.
